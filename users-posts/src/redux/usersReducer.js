@@ -5,7 +5,7 @@ const initialState = {
   selectedUserId: undefined
 }
 
-export const postsReducer = (state = initialState, action) => {
+export const usersReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_USERS:
         return { ...state, users: action.payload }
